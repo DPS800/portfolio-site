@@ -55,6 +55,7 @@ nav a {
 
 .container {
     color: #212529 !important;
+    align-content: center !important;
 }
 
 .card {
@@ -62,6 +63,7 @@ nav a {
     height: 480px !important;
     background-color: #212529 !important;
     color: #ffffff !important;
+    margin-bottom: 10% !important;
 }
 
 .card img {
@@ -71,4 +73,14 @@ nav a {
 
 .btn {
     border-radius: 0% !important;
+}
+
+.btn-primary {
+    background-color: #3963FF !important;
+    border-width: 0px !important;
+    width: 100% !important;
+}
+
+.btn-primary:hover {
+    background-color: #60F6A6 !important;
 }
