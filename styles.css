@@ -6,6 +6,10 @@ body {
     background-size: 100% 100%;
 }
 
+h1 {
+    font-weight: normal !important;
+}
+
 .navbar-brand {
     image-rendering: pixelated;
 }
@@ -13,7 +17,8 @@ body {
 nav {
     padding-top: 0% !important;
     padding-bottom: 0% !important;
-    color: white !important;
+    color: #ffffff !important;
+    border-radius: 0% !important;
 }
 
 .nav-item {
@@ -29,14 +34,14 @@ nav {
 
 .dropdown-menu {
     background-color: #2A2AC9 !important;
-    width: 108% !important;
-    margin-bottom: -1% !important;
-    margin-left: -4% !important;
+    
+    border-radius: 0% !important;
 }
 
 .dropdown-item {
     color: #ffffff !important;
     background-color: #2A2AC9 !important;
+    border-radius: 0% !important;
 }
 
 .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active, .dropdown-item.active, .dropdown-item:active:focus, .open>.dropdown-toggle.dropdown {
@@ -50,4 +55,20 @@ nav a {
 
 .container {
     color: #212529 !important;
+}
+
+.card {
+    border-radius: 0% !important;
+    height: 480px !important;
+    background-color: #212529 !important;
+    color: #ffffff !important;
+}
+
+.card img {
+    border-radius: 0% !important;
+    height: 200px !important;
+}
+
+.btn {
+    border-radius: 0% !important;
 }
