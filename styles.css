@@ -10,6 +10,10 @@ h1 {
     font-weight: normal !important;
 }
 
+.welcome {
+    font-size: 1000% !important;
+}
+
 .navbar-brand {
     image-rendering: pixelated;
 }
@@ -25,6 +29,14 @@ nav {
     color: #ffffff !important;
     background-color: #3963FF !important;
     border-radius: 0% !important;
+    width: 150px;
+    text-align: center !important;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-item {
+        width: 100% !important;
+    }
 }
 
 .nav-item:hover, .nav-item:focus, .nav-item:active, .nav-item.active, .nav-item:active:focus, .open>.dropdown-toggle.nav-item {
