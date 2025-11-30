@@ -5,41 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Monster Timeline Art </title>
-        <link href="styles.css" rel="stylesheet">
-        <link href="DGlogo.png" rel="icon" type="image/x-icon">
+        <link href="../css/styles.css" rel="stylesheet">
+        <link href="../img/DGlogo.png" rel="icon" type="image/x-icon">
         
         <!-- BOOTSTRAP-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
-            <div class="container-md">
-                <img src="DGlogo.png" class="navbar-brand px-4" alt="Deep Grewal's Logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" type="button" href="index.html">
-                            <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
-                        </li>
-                        <li class="nav-item" type="button" href="about.html">
-                            <a class="nav-link" href="about.html"> About Me </a>
-                        </li>
-                        <li class="nav-item" type="button" href="contact.html">
-                            <a class="nav-link" href="contact.html"> Contact </a>
-                        </li>
-                        <li class="nav-item dropdown" type="button" href="studies.html">
-                            <a class="nav-link dropdown-toggle" href="studies.html">
-                                Case Studies
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!--NAVBAR -->
+        <div id="navbar"></div>
+        <script>
+            window.onload = function(){
+                $.get("../css/navbar.html", function(data){
+                    $("#navbar").html(data);
+                })
+            }
+        </script>
 
         <!-- BACK TO TOP BUTTON -->
         <a id="toTop" class="btn" role="button" href="#" target="_top" title="Back to Top">
@@ -52,14 +37,14 @@
         <!-- CONTENT -->
         <div class="container container-md pt-5 text-center">
             <!-- TITLE AND DEMO -->
-            <br></br>
+            <br></br><br></br>
             <h1 class="display-1"> 🎨 Monster Timeline Art 🎨 </h1>
             <p></p>
             <p> A ghoulish spiral monster timeline illustration drawn on ProCreate as part of a group project just in time for Halloween 🎃 </p>
-            <img src="MTstl.jpg" alt="The Monster Spiral Timeline I Illustrated" style="width: 75%;">
+            <img src="../img/MTstl.jpg" alt="The Monster Spiral Timeline I Illustrated" style="width: 75%;">
             <p></p>
             <p> And below is the full timeline from our presentation with the spiral in it, thanks to the rest of my group for building this out while I drew our scary spiral! </p>
-            <img src="MTftl.jpg" alt="Our Full Monster Timeline" style="width: 100%;">
+            <img src="../img/MTftl.jpg" alt="Our Full Monster Timeline" style="width: 100%;">
             <br><br></br></br>
             
             <!-- BODY -->
@@ -73,9 +58,9 @@
                     <p> We needed to a lot of research and data gathering, not just on our select monsters and on themes for our monsters of the future, but also on the actual monster selection itself. We did both primary (done with a user survey) and secondary research to determind the most fitting selection of monsters for our timeline, along with visual and format inspirations for the timeline itself. </p>
                     <br>
                     <h2> Terrifying Timeline! </h2>
-                    <img src="MTca1.jpg" alt="Linear Monster Timeline Concept" style="width: 100%;">
+                    <img src="../img/MTca1.jpg" alt="Linear Monster Timeline Concept" style="width: 100%;">
                     <p> I started by drawing out a quick rough sketch concept of our timeline with a monster selection we had at the time. This concept was a linear line but had all the basic ideas for imagery on the timeline. </p>
-                    <img src="MTca2.jpg" alt="Spiral Monster Timeline Concept" style="width: 100%;">
+                    <img src="../img/MTca2.jpg" alt="Spiral Monster Timeline Concept" style="width: 100%;">
                     <p> Next we find and think of as a group what kind of timeline format/style we'd want. We floated around different ideas, like a circle-based planet orbit idea, before landing on a spiral shape to represent the cultural ouroboros of the concept of monsters, and I would make a coloured concept of the spiral timeline. After adjustments to the spiral itself were made (like making it tilted for added depth and focus) and a new monster selection I was able to finish our monster timeline spiral. Each monster is represented by a unique single colour for themselves. </p>
                     <br>
                     <h2> A Fright to Remember... </h2>

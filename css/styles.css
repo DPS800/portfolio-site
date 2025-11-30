@@ -1,6 +1,6 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-    background-image: url('bg.png') !important;
+    background-image: url('../img/bg.png') !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -30,16 +30,18 @@ body {
      }
 }
 
-h1 {
+h1,h2 {
     font-weight: normal !important;
 }
 
 .welcome {
-    font-size: 1000% !important;
+    font-size: 800% !important;
 }
 
 .navbar-brand {
     image-rendering: pixelated;
+    
+    width: calc(0.5% + 150px) !important;
 }
 
 nav {
@@ -96,7 +98,6 @@ nav a {
 
 .card {
     border-radius: 0% !important;
-    height: 480px !important;
     background-color: #212529 !important;
     color: #ffffff !important;
     margin-bottom: 10% !important;
@@ -104,7 +105,7 @@ nav a {
 
 .card img {
     border-radius: 0% !important;
-    height: 200px !important;
+    height: 230px !important;
 }
 
 .btn {

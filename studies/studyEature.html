@@ -5,41 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> EATure Prototype </title>
-        <link href="styles.css" rel="stylesheet">
-        <link href="DGlogo.png" rel="icon" type="image/x-icon">
+        <link href="../css/styles.css" rel="stylesheet">
+        <link href="../img/DGlogo.png" rel="icon" type="image/x-icon">
         
         <!-- BOOTSTRAP-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
-            <div class="container-md">
-                <img src="DGlogo.png" class="navbar-brand px-4" alt="Deep Grewal's Logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" type="button" href="index.html">
-                            <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
-                        </li>
-                        <li class="nav-item" type="button" href="about.html">
-                            <a class="nav-link" href="about.html"> About Me </a>
-                        </li>
-                        <li class="nav-item" type="button" href="contact.html">
-                            <a class="nav-link" href="contact.html"> Contact </a>
-                        </li>
-                        <li class="nav-item dropdown" type="button" href="studies.html">
-                            <a class="nav-link dropdown-toggle" href="studies.html">
-                                Case Studies
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!--NAVBAR -->
+        <div id="navbar"></div>
+        <script>
+            window.onload = function(){
+                $.get("../css/navbar.html", function(data){
+                    $("#navbar").html(data);
+                })
+            }
+        </script>
 
         <!-- BACK TO TOP BUTTON -->
         <a id="toTop" class="btn" role="button" href="#" target="_top" title="Back to Top">
@@ -52,12 +37,13 @@
         <!-- CONTENT -->
         <div class="container container-md pt-5 text-center">
             <!-- TITLE AND DEMO -->
-            <br></br>
+            <br></br><br></br>
             <h1 class="display-1"> 🎮 EATure Prototype 🎮 </h1>
             <p></p>
             <p> An EATure game prototype, complete with custom graphics, music, interesting gameplay! </p>
             <!-- GAME -->
-            <iframe src="EATure/index.html" frameborder="0" width="600" height="400"></iframe>
+            <iframe src="../EATure/index.html" frameborder="0" width="600" height="400"></iframe>
+
             <p> HOW TO PLAY<br> Move your move to move the EATure. Adjust the EATure's speed with your scroll and click to stop them.</br> You lose when the EATure touches an enemy or eats your mouse! </p>
             <br><br></br></br>
             
@@ -72,11 +58,11 @@
                     <p> I realized a lot of games within the small mouse avoider genre follow the same template of simply having you mouse avoid different kinds of enemeies, so what should I do to change things up? I took some inspiration from an older game I made years ago that had the intriguing mechanic of a player that follows food on the mouse but can't touch it. I also had to research on using sine waves in GDevelop games as enemy paths. </p>
                     <br>
                     <h2> Documenting the Delicacy </h2>
-                    <img src="EPwf.jpg" alt="EATure game screen wireframe">
+                    <img src="../img/EPwf.jpg" alt="EATure game screen wireframe">
                     <p> After making the propsal/wireframes and character concepts (each character design uses shapes/lines to visually show their movement path), I started using GDevelop to make the game and art, and Garageband to work on the loopable music during times I couldn't work on the game (like in transit). I had challenges with choosing an art direction, which I overcame by using 32x32 pixel art images for each character. </p>
-                    <img src="EPss.jpg" alt="Early EATure development screenshot" style="width: 75%;">
+                    <img src="../img/EPss.jpg" alt="Early EATure development screenshot" style="width: 75%;">
                     <p> I began with working on the basic controls with the idea of expanded functionality like using the scroll wheel of the mouse to change speed to expand upon the genre. Next I worked on the different enemies and their spawning. I then finalized the character designs and music and drew out each character, collectable, and animation to finish things off. For fluid animations, I also made the speed of an animation correlate to an object's movement speed. </p>
-                    <img src="EPca.jpg" alt="EATure character concept art" style="width: 50%;">
+                    <img src="../img/EPca.jpg" alt="EATure character concept art" style="width: 50%;">
                     <br></br>
                     <h2> Recipe for Success! </h2>
                     <p> Not only did I complete my goals of making a challenging yet balanced game with finess that looks and plays good, but got above perfect marks by going above and beyond too. I also made a prototype that can be easily expaned upon (like with the scrapped enemy and power-ups for example). </p>
