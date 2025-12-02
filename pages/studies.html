@@ -64,7 +64,7 @@
             <br><br>
             <div class="row">
                 <!-- EATURE -->
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card">
                         <img src="../img/EPpreview.jpg" class="card-img-top" alt="EATure Prototype preview image">
                         <div class="card-body">
@@ -77,7 +77,7 @@
                 </div>
 
                 <!-- MONSTER TIMELINE ARTWORK -->
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card">
                         <img src="../img/MTpreview.jpg" class="card-img-top" alt="Monster Timeline spiral art previw image">
                         <div class="card-body">
@@ -90,7 +90,7 @@
                 </div>
 
                 <!-- NEILAGGS WITHOUT WI-FI -->
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card">
                         <img src="../img/WFpreview.jpg" class="card-img-top" alt="Neilaggs Without Wi-Fi jam game preview image">
                         <div class="card-body">
@@ -103,5 +103,15 @@
             </div>
 
         </div>
+
+        <!-- FOOTER -->
+         <script>
+            window.onload = function(){
+                $.get("../css/footer.html", function(data){
+                    $("#footer").html(data);
+                })
+            }
+        </script>
+        <div id="footer"></div>
     </body>
 </html>

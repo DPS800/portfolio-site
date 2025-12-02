@@ -16,12 +16,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <!--NAVBAR -->
+        <!-- NAVBAR -->
         <div id="navbar"></div>
         <script>
             window.onload = function(){
                 $.get("../css/navbar.html", function(data){
                     $("#navbar").html(data);
+                })
+                $.get("../css/footer.html", function(data){
+                    $("#footer").html(data);
                 })
             }
         </script>
@@ -31,8 +34,11 @@
             <br></br><br></br>
             <h1 class="display-1"> ❓ About Me ❓ </h1>
             <br>
-            <p> <b>Interaction Designer</b><br> A designer that is able to create a wide variety of high quality products and works well both collaboratively and individually.</br> Strives to produce innovative, creative designs that are accessible and leave people inspired. </br> </p>
-            <p> <b>Education</b><br> GBC Interaction Design Program </p>
+            <p> <b>🎨 Interaction Designer</b><br> A designer that is able to create a wide variety of high quality products and works well both collaboratively and individually.</br> Strives to produce innovative, creative designs made with love that are accessible and leave people inspired. </br> </p>
+            <p> <b>🎓 Education</b><br> GBC Interaction Design Program </p>
         </div>
+
+        <!-- FOOTER -->
+        <div id="footer"></div>
     </body>
 </html>

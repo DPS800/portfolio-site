@@ -38,6 +38,18 @@ h1,h2 {
     font-size: 800% !important;
 }
 
+@media screen and (max-width: 1126px) {
+    .welcome {
+        font-size: 250% !important;
+    }
+    h1 {
+        font-size: 150% !important;
+    }
+    h2 {
+        font-size: 125% !important;
+    }
+}
+
 .navbar-brand {
     image-rendering: pixelated;
     
@@ -103,6 +115,12 @@ nav a {
     margin-bottom: 10% !important;
 }
 
+@media screen and (max-width: 1126px) {
+    .card {
+        width: 100% !important;
+    }
+}
+
 .card img {
     border-radius: 0% !important;
     height: 230px !important;
@@ -120,4 +138,25 @@ nav a {
 
 .btn-primary:hover {
     background-color: #60F6A6 !important;
+}
+
+.progress {
+    height: 2px !important;
+}
+
+footer {
+  padding: 10px;
+  text-align: end;
+  background-color: #2B3035;
+  color: white !important;
+}
+
+footer p {
+    font-size: small;
+    margin-bottom: -10px;
+    text-align: left;
+}
+
+footer a:link {
+    color: #3963FF;
 }

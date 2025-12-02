@@ -16,12 +16,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <!--NAVBAR -->
+        <!-- NAVBAR -->
         <div id="navbar"></div>
         <script>
             window.onload = function(){
                 $.get("../css/navbar.html", function(data){
                     $("#navbar").html(data);
+                })
+                $.get("../css/footer.html", function(data){
+                    $("#footer").html(data);
                 })
             }
         </script>
@@ -80,5 +83,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- FOOTER -->
+        <div id="footer"></div>
     </body>
 </html>
