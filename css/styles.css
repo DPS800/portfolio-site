@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    overflow-x: hidden;
 }
 
 #toTop {
@@ -159,4 +160,25 @@ footer p {
 
 footer a:link {
     color: #3963FF;
+}
+
+img, .card {
+  -webkit-animation: flip 1s;
+  animation: flip 1s;
+}
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+@keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
 }
