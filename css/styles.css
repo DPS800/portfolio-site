@@ -7,6 +7,11 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+  font-family: pixel;
+  src: url(PixelifySans-Regular.ttf);
+}
+
 #toTop {
   position: fixed;
   right: 1rem;
@@ -33,6 +38,7 @@ body {
 
 h1,h2 {
     font-weight: normal !important;
+    font-family: pixel;
 }
 
 .welcome {
@@ -62,6 +68,7 @@ nav {
     padding-bottom: 0% !important;
     color: #ffffff !important;
     border-radius: 0% !important;
+    font-family: pixel;
 }
 
 .nav-item {
@@ -159,10 +166,14 @@ footer p {
 }
 
 footer a:link {
-    color: #3963FF;
+    color: #3963FF !important;
 }
 
-img, .card {
+p a:link {
+    color: #2A2AC9;
+}
+
+img, .card, main, iframe {
   -webkit-animation: flip 1s;
   animation: flip 1s;
 }
@@ -180,5 +191,34 @@ img, .card {
   }
   to {
     transform: rotateY(0deg)
+  }
+}
+
+.dark {
+    background-color: #2125291f !important;
+    border-radius: 100px;
+    
+}
+
+.dark {
+  -webkit-animation: pulse 1.5s;
+  animation: pulse 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes pulse {
+  from {
+    border-radius: 100px;
+  }
+  to {
+    border-radius: 10px;
+  }
+}
+@keyframes pulse {
+  from {
+    border-radius: 100px;
+  }
+  to {
+    border-radius: 10px;
   }
 }
