@@ -41,6 +41,18 @@ h1,h2 {
     font-family: pixel;
 }
 
+h2 {
+    font-size: 48px !important;
+    margin-bottom: -10px !important;
+}
+
+h3 {
+    font-weight: normal !important;
+    font-family: pixel;
+    font-size: 32px !important;
+    margin-bottom: -20px !important;
+}
+
 .welcome {
     font-size: 800% !important;
 }
@@ -111,6 +123,10 @@ nav a {
     color: #ffffff !important;
 }
 
+p {
+    font-size: 18px;
+}
+
 .container {
     color: #212529 !important;
     align-content: center !important;
@@ -121,10 +137,15 @@ nav a {
     background-color: #212529 !important;
     color: #ffffff !important;
     margin-bottom: 10% !important;
+    align-items: center !important;
 }
 
-@media screen and (max-width: 1126px) {
-    .card {
+.card-text {
+    width: 400px !important;
+}
+
+@media screen and (max-width: 1400px) {
+    .col-md-4 {
         width: 100% !important;
     }
 }
@@ -151,6 +172,25 @@ nav a {
 .progress {
     height: 2px !important;
 }
+
+.sp {
+    width: 60% !important;
+    transform: translate(32%,0);
+}
+
+img.zoomable {
+    cursor: zoom-in;
+}
+
+img:active.zoomable {
+    width: 110% !important;
+    transform: translate(-5%,0);
+    cursor: zoom-out;
+    /*transform: scale(2);*/
+}
+/*img.zoomable {
+    transition: transform .6s;
+}*/
 
 footer {
   padding: 10px;
