@@ -91,6 +91,14 @@ nav {
     text-align: center !important;
 }
 
+l {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: x-small !important;
+    text-align: right !important;
+    margin-top: 1% !important;
+    margin-left: 50px;
+}
+
 @media screen and (max-width: 992px) {
     .nav-item {
         width: 100% !important;
@@ -104,7 +112,6 @@ nav {
 
 .dropdown-menu {
     background-color: #2A2AC9 !important;
-    
     border-radius: 0% !important;
 }
 
@@ -130,6 +137,7 @@ p {
 .container {
     color: #212529 !important;
     align-content: center !important;
+    margin: auto !important;
 }
 
 .card {
@@ -138,21 +146,28 @@ p {
     color: #ffffff !important;
     margin-bottom: 10% !important;
     align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden !important;
 }
 
-.card-text {
-    width: 400px !important;
-}
-
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
     .col-md-4 {
         width: 100% !important;
     }
+    .card-text {
+        width: 400px !important;
+    }
+}
+
+.card-text {
+    height: 150px !important;
 }
 
 .card img {
     border-radius: 0% !important;
     height: 230px !important;
+    width: 388px !important;
 }
 
 .btn {
@@ -193,10 +208,10 @@ img:active.zoomable {
 }*/
 
 footer {
-  padding: 10px;
-  text-align: end;
-  background-color: #2B3035;
-  color: white !important;
+    padding: 10px;
+    text-align: end;
+    background-color: #2B3035;
+    color: white !important;
 }
 
 footer p {
@@ -261,4 +276,12 @@ img, .card, main, iframe {
   to {
     border-radius: 10px;
   }
+}
+
+.dgin:hover {
+    content: url(../img/DGlogo.png);
+}
+
+.dglo:hover {
+    content: url(../img/DGlogoshine.gif);
 }
