@@ -165,6 +165,9 @@ p {
     .card-text {
         width: 400px !important;
     }
+    .sp-80 {
+        width: 100% !important;
+    }
 }
 
 .card-text {
@@ -202,7 +205,7 @@ p {
 }
 
 .sp-80 {
-    width: 40% !important;
+    width: 40%;
     margin-left: auto !important;
     margin-right: auto !important;
 }
@@ -242,7 +245,7 @@ p a:link {
     color: #2A2AC9;
 }
 
-img, .card, main, iframe {
+img:not(#titleicon, #titleiconflip), .card, main, iframe {
   -webkit-animation: flip 1s;
   animation: flip 1s;
 }
@@ -292,6 +295,11 @@ img, .card, main, iframe {
   }
 }
 
+nav img,footer img {
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+}
+
 .dgin:hover {
     content: url(../img/DGlogo.png);
 }
@@ -322,4 +330,21 @@ img, .card, main, iframe {
     .iconpigeon {
         content: url(../img/icon_pigeon.gif);
     }
+}
+
+#titleicon {
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+    width: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#titleiconflip {
+    transform: scale(-1,1);
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+    width: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
