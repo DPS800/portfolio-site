@@ -58,11 +58,13 @@ h3 {
 
 .welcome {
     font-size: 800% !important;
+    margin-bottom: 5%;
 }
 
 @media screen and (max-width: 1126px) {
     .welcome {
         font-size: 250% !important;
+        width: 75% !important;
     }
     h1 {
         font-size: 150% !important;
@@ -296,4 +298,28 @@ img, .card, main, iframe {
 
 .dglo:hover {
     content: url(../img/DGlogoshine.gif);
+}
+
+.nav-item:hover {
+    .iconhome {
+        content: url(../img/icon_home.gif);
+    }
+}
+
+.nav-item:hover {
+    .iconstudies {
+        content: url(../img/icon_studies.gif);
+    }
+}
+
+.nav-item:hover {
+    .iconabout {
+        content: url(../img/icon_about.gif);
+    }
+}
+
+.nav-item:hover {
+    .iconpigeon {
+        content: url(../img/icon_pigeon.gif);
+    }
 }
