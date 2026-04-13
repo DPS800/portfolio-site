@@ -9,7 +9,10 @@ body {
 
 @font-face {
   font-family: pixel;
-  src: url(PixelifySans-Regular.ttf);
+  src: url(Jersey10-Regular.ttf);
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #toTop {
@@ -42,14 +45,14 @@ h1,h2 {
 }
 
 h2 {
-    font-size: 48px !important;
+    font-size: 58px !important; /* 48px with pixelifysans */
     margin-bottom: -10px !important;
 }
 
 h3 {
     font-weight: normal !important;
     font-family: pixel;
-    font-size: 32px !important;
+    font-size: 42px !important; /* 32px with pixelifysans */
     margin-bottom: -20px !important;
 }
 
@@ -81,6 +84,7 @@ nav {
     color: #ffffff !important;
     border-radius: 0% !important;
     font-family: pixel;
+    font-size: 18px !important; /* none with pixelifysans */
 }
 
 .nav-item {
@@ -113,6 +117,7 @@ l {
 .dropdown-menu {
     background-color: #2A2AC9 !important;
     border-radius: 0% !important;
+    font-size: 18px !important; /* none with pixelifysans */
 }
 
 .dropdown-item {
@@ -190,7 +195,14 @@ p {
 
 .sp {
     width: 60% !important;
-    transform: translate(32%,0);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.sp-80 {
+    width: 40% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 img.zoomable {
