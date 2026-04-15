@@ -241,7 +241,13 @@ footer p {
 }
 
 footer a:link {
-    color: #4DD0E1 !important;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+footer a:link:hover {
+    color: #3963FF !important;
+    text-decoration: underline !important;
 }
 
 footer .col-6 {
@@ -378,7 +384,13 @@ nav img,footer img {
 
 .carousel-caption p a:link {
     font-size: 14px !important;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.carousel-caption p a:link:hover {
     color: #4DD0E1 !important;
+    text-decoration: underline;
 }
 
 h1 hr {
