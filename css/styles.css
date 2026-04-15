@@ -72,6 +72,9 @@ h3 {
     h2 {
         font-size: 125% !important;
     }
+    .carousel {
+        width: 100% !important;
+    }
 }
 
 .navbar-brand {
@@ -238,7 +241,11 @@ footer p {
 }
 
 footer a:link {
-    color: #3963FF !important;
+    color: #4DD0E1 !important;
+}
+
+footer .col-6 {
+    margin-bottom: 2%;
 }
 
 p a:link {
@@ -347,4 +354,39 @@ nav img,footer img {
     width: 8%;
     margin-left: 1%;
     margin-right: 1%;
+}
+
+.carousel {
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.carousel img {
+    height: 360px;
+}
+
+.carousel-caption {
+    margin-bottom: -8% !important;
+    background-color: #2B3035;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 100px !important;
+    border-radius: 30px !important;
+    width: 50% !important;
+}
+
+.carousel-caption p a:link {
+    font-size: 14px !important;
+    color: #4DD0E1 !important;
+}
+
+h1 hr {
+    border-width: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2%;
+    border-color: #212529 !important;
+    border-radius: 10px;
+    opacity: 100%;
 }
