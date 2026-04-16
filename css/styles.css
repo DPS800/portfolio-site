@@ -74,6 +74,7 @@ h3 {
     }
     .carousel {
         width: 100% !important;
+        height: 50% !important;
     }
 }
 
@@ -242,7 +243,7 @@ footer p {
 
 footer a:link {
     color: #ffffff !important;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 footer a:link:hover {
@@ -366,6 +367,10 @@ nav img,footer img {
     width: 50%;
     margin: auto;
     margin-top: 3%;
+}
+
+.scratch {
+    width: 65% !important;
 }
 
 .carousel img {
