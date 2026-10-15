@@ -1,10 +1,12 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-    background-image: url('../img/bg.png') !important;
-    background-repeat: no-repeat;
+    background-image: url('../img/bg_dps800.png') !important;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 40%, 40%;
+    image-rendering: pixelated;
     overflow-x: hidden;
+    
 }
 
 @font-face {
@@ -80,7 +82,6 @@ h3 {
 
 .navbar-brand {
     image-rendering: pixelated;
-    
     width: calc(0.5% + 150px) !important;
 }
 
@@ -214,6 +215,10 @@ p {
     margin-right: auto !important;
 }
 
+img {
+    image-rendering: auto;
+}
+
 img.zoomable {
     cursor: zoom-in;
 }
@@ -281,7 +286,7 @@ img:not(#titleicon, #titleiconflip), .card, main, iframe {
 }
 
 .dark {
-    background-color: #ffffff60 !important;
+    background-color: #ffffff80 !important;
     border-radius: 100px;
     background-color: #2125291f;
 }
@@ -390,7 +395,7 @@ nav img,footer img {
 .carousel-caption p a:link {
     font-size: 14px !important;
     color: #ffffff;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .carousel-caption p a:link:hover {
