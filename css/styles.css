@@ -4,7 +4,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 40%, 40%;
-    image-rendering: pixelated;
+    image-rendering: pixelated !important;
     overflow-x: hidden;
     
 }
@@ -114,6 +114,9 @@ l {
     .nav-item {
         width: 100% !important;
     }
+    body {
+        background-size: 64px, 64px;
+    }
 }
 
 .nav-item:hover, .nav-item:focus, .nav-item:active, .nav-item.active, .nav-item:active:focus, .open>.dropdown-toggle.nav-item {
@@ -180,6 +183,11 @@ p {
 }
 
 .card img {
+    image-rendering: pixelated !important;
+}
+
+.card-img-top {
+    image-rendering: auto !important;
     border-radius: 0% !important;
     height: 230px !important;
     width: 388px !important;
@@ -216,7 +224,7 @@ p {
 }
 
 img {
-    image-rendering: auto;
+    image-rendering: auto !important;
 }
 
 img.zoomable {
@@ -378,7 +386,13 @@ nav img,footer img {
     width: 65% !important;
 }
 
+.carousel .carousel-caption img {
+    image-rendering: pixelated !important;
+    height: 18px !important;
+}
+
 .carousel img {
+    image-rendering: auto;
     height: 360px;
 }
 
@@ -395,12 +409,12 @@ nav img,footer img {
 .carousel-caption p a:link {
     font-size: 14px !important;
     color: #ffffff;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 .carousel-caption p a:link:hover {
     color: #4DD0E1 !important;
-    text-decoration: underline;
+    text-decoration: none !important;
 }
 
 h1 hr {
