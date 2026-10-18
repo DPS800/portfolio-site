@@ -6,7 +6,6 @@ body {
     background-size: 40%, 40%;
     image-rendering: pixelated !important;
     overflow-x: hidden;
-    
 }
 
 @font-face {
@@ -425,4 +424,13 @@ h1 hr {
     border-color: #212529 !important;
     border-radius: 10px;
     opacity: 100%;
+}
+
+.eatureFix {
+    height: 400px !important;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: hidden;
+    overscroll-behavior-y: contain;
 }
